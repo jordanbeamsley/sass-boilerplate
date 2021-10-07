@@ -1,0 +1,24 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: $font-body;
+}
+
+section {
+    padding: $section-padding;
+    position: relative;
+}
+
+p {
+    line-height: $p-line-height;
+}
+
+//-------------------- Base Classes --------------------------
+
+.bg {
+    @include color-modifier('background-color', $bg-colors);
+}
+
+.color {
+    @include color-modifier('color', $font-colors);
+}

@@ -1,0 +1,14 @@
+@mixin position($top, $right: $top, $bottom: $top, $left: $right) {
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
+}
+
+@mixin color-modifier($property, $map) {
+    @each $name, $hex in $map {
+        &-#{$name} {
+            #{$property}: $hex;
+        }
+    }
+}

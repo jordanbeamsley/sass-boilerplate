@@ -1,0 +1,46 @@
+/* ------------------ Colors ------------------ */
+
+//Branding
+$primary-accent: #2DAAE1;
+$primary-accent-light: lighten($primary-accent, 10%);
+$primary-accent-darken: darken($primary-accent, 10%);
+
+$secondary-accent: #2DAAE1;
+$secondary-accent-light: lighten($primary-accent, 10%);
+$secondary-accent-darken: darken($primary-accent, 10%);
+
+//Backgrounds
+$bg-colors: (
+    light: #fff,
+    mid-light: #F7F7F7,
+    mid-dark: #6d6d6d,
+    dark: #444444,
+    accent: $primary-accent,
+);
+
+
+/* ------------------ Fonts ------------------ */
+
+//Font stack
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Roboto:wght@300;400;500&display=swap');
+$roboto: 'Roboto', sans-serif;
+$montserrat: 'Monserrat', sans-serif;
+
+$font-heading: $roboto;
+$font-body: $montserrat;
+
+//Font Colors
+$font-colors: (
+    light: #fff,
+    mid-light: #A4A4A4,
+    mid-dark: #636363,
+    dark: #333333,
+);
+
+//Paragraph Spacing
+$p-line-height: 1.5;
+$p-margin: 1rem;
+
+
+/* ------------------ Spacing ------------------ */
+$section-padding: 5rem 0;
