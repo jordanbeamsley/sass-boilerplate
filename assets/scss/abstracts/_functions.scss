@@ -1,0 +1,11 @@
+
+//Return Z-index based on position in list
+@function z($element, $list) {
+    @if index($list, $element) {
+        @return (length($list) - index($list, $element)) + 1;
+    }
+    @else {
+        @warn 'element "#{$element}" does not exist in list';
+        @return null;
+    }
+}
